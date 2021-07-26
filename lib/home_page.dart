@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:medicare_uiredesign/themeData.dart';
+import 'package:medicare_uiredesign/healthStat_info.dart';
+import 'package:medicare_uiredesign/home_page_header.dart';
+import 'package:medicare_uiredesign/medicationtools.dart';
+import 'package:medicare_uiredesign/searchbar.dart';
+import 'package:medicare_uiredesign/services.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -16,52 +20,11 @@ class _MyHomePageState extends State<MyHomePage> {
           physics: ClampingScrollPhysics(),
           child: Column(
             children: <Widget>[
-              Container(
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Padding(
-                        padding: EdgeInsets.all(16.0),
-                      ),
-                      Container(
-                          child: Row(
-                        children: [
-                          Text('Hi!',
-                              textAlign: TextAlign.left,
-                              style: AppTheme.regular),
-                        ],
-                      )),
-                      Padding(padding: EdgeInsets.all(1)),
-                      Container(
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                              'Name', // will be using $ for input from user
-                              textAlign: TextAlign.left,
-                              style: AppTheme.bold,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Padding(padding: EdgeInsets.all(1)),
-                      Container(
-                        child: Row(
-                          children: <Widget>[
-                            Icon(Icons.location_on_outlined),
-                            Padding(padding: EdgeInsets.all(1)),
-                            Text(
-                              'location', // will be using $ for input from user
-                              textAlign: TextAlign.left,
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+              HomePage_Header(),
+              SearchBar(),
+              healthStatInfo(),
+              MedTool(),
+              serviceApp(),
             ],
           ),
         ),
