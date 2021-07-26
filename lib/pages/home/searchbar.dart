@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:medicare_uiredesign/themeData.dart';
+import 'package:Medicare/themeData.dart';
 
 class SearchBar extends StatefulWidget {
   @override
@@ -23,7 +23,7 @@ class _SearchBarState extends State<SearchBar> {
               padding: const EdgeInsets.only(top: 8, bottom: 8),
               child: Container(
                 decoration: BoxDecoration(
-                  color: HexColor('#F8FAFB'),
+                  color: HexColor('#FFFFFFF'),
                   borderRadius: const BorderRadius.only(
                     bottomRight: Radius.circular(13.0),
                     bottomLeft: Radius.circular(13.0),
@@ -41,7 +41,7 @@ class _SearchBarState extends State<SearchBar> {
                             fontFamily: 'WorkSans',
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
-                            color: AppTheme.notWhite,
+                            color: Colors.black,
                           ),
                           keyboardType: TextInputType.text,
                           decoration: InputDecoration(

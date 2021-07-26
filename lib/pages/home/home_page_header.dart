@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:medicare_uiredesign/profile_picture.dart';
-import 'package:medicare_uiredesign/themeData.dart';
+import 'package:Medicare/profile_picture.dart';
+import 'package:Medicare/themeData.dart';
 
 class HomePage_Header extends StatefulWidget {
   @override
@@ -50,6 +50,7 @@ class _HomePage_HeaderState extends State<HomePage_Header> {
                   Text(
                     'location', // will be using $ for input from user
                     textAlign: TextAlign.left,
+                    style: AppTheme.Title,
                   )
                 ],
               ),

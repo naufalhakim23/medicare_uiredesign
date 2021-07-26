@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:medicare_uiredesign/models/services_category.dart';
-import 'package:medicare_uiredesign/themeData.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:Medicare/themeData.dart';
+import 'package:Medicare/models/health_category.dart';
 
-class serviceApp extends StatefulWidget {
+class healthStatInfo extends StatefulWidget {
   @override
-  _serviceAppState createState() => _serviceAppState();
+  _healthStatInfoState createState() => _healthStatInfoState();
 }
 
-class _serviceAppState extends State<serviceApp> {
+class _healthStatInfoState extends State<healthStatInfo> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +24,7 @@ class _serviceAppState extends State<serviceApp> {
                   Container(
                       child: Row(
                     children: [
-                      Text('Services',
+                      Text('Peringatan Kesehatan',
                           textAlign: TextAlign.left, style: AppTheme.Title),
                     ],
                   )),
@@ -32,6 +33,9 @@ class _serviceAppState extends State<serviceApp> {
             ),
           )),
     );
+    // TODO: implement build
     throw UnimplementedError();
   }
 }
+
+// class 

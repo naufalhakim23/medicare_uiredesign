@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:medicare_uiredesign/medicationtools_page.dart';
-import 'package:medicare_uiredesign/medicationtools_thumbnail.dart';
+import 'package:Medicare/pages/home/medicationtools_page.dart';
+import 'package:Medicare/pages/home/medicationtools_thumbnail.dart';
 
 class MedTool extends StatefulWidget {
   @override
