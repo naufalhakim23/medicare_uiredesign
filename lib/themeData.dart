@@ -16,9 +16,20 @@ class AppTheme {
     fontWeight: FontWeight.w900,
     fontSize: 25,
   );
+  static const TextStyle articleHeader = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w900,
+    fontSize: 20,
+  );
   static const TextStyle Title = TextStyle(
       fontFamily: 'Poppins',
       fontSize: 18,
+      fontWeight: FontWeight.w500,
+      color: AppTheme.grey);
+
+  static const TextStyle ArticleTitle = TextStyle(
+      fontFamily: 'Poppins',
+      fontSize: 12,
       fontWeight: FontWeight.w500,
       color: AppTheme.grey);
 }
