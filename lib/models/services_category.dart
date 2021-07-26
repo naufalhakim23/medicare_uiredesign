@@ -1,5 +1,3 @@
-import 'package:medicare_uiredesign/models/health_category.dart';
-
 class ServicesCategory {
   ServicesCategory({
     this.service = '',
