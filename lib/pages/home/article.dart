@@ -12,7 +12,7 @@ class Article extends StatelessWidget {
           physics: ClampingScrollPhysics(),
           child: Container(
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.only(left: 15),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
