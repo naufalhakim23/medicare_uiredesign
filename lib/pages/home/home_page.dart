@@ -26,6 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
               HomePage_Header(),
               SearchBar(),
               healthStatInfo(),
+              HealthStatListView(),
               MedTool(),
               serviceApp(),
               ServicesListView(),
@@ -34,6 +35,38 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class HealthStatListView extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 120,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        physics: BouncingScrollPhysics(),
+        shrinkWrap: true,
+        children: [
+          InkWell(
+            onTap: () {},
+            child: HealthStatSlider(),
+          ),
+          InkWell(
+            onTap: () {},
+            child: HealthStatSlider(),
+          ),
+          InkWell(
+            onTap: () {},
+            child: HealthStatSlider(),
+          ),
+          InkWell(
+            onTap: () {},
+            child: HealthStatSlider(),
+          ),
+        ],
       ),
     );
   }
@@ -48,7 +81,7 @@ class ServicesListView extends StatelessWidget {
       shrinkWrap: true,
       children: <Widget>[
         Container(
-          height: 140,
+          height: 90,
           child: ListView(
             scrollDirection: Axis.horizontal,
             physics: BouncingScrollPhysics(),
