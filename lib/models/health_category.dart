@@ -14,29 +14,6 @@ class Category {
   final String status;
   final Color color;
   final String healthCategory;
-
-  // static List<Category> popularCourseList = <Category>[
-  //   Category(
-  //     risk: 'App Design Course',
-  //     status: 12,
-  //     healthCategory: 25,
-  //   ),
-  //   Category(
-  //     risk: 'Web Design Course',
-  //     status: 28,
-  //     healthCategory: 208,
-  //   ),
-  //   Category(
-  //     risk: 'App Design Course',
-  //     status: 12,
-  //     healthCategory: 25,
-  //   ),
-  //   Category(
-  //     risk: 'Web Design Course',
-  //     status: 28,
-  //     healthCategory: 208,
-  //   ),
-  // ];
 }
 
 List<Category> categoryList = <Category>[
