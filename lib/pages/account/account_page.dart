@@ -13,7 +13,10 @@ class AccountPage extends GetView<AccountController> {
           physics: BouncingScrollPhysics(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[AccountListOpt()],
+            children: <Widget>[
+              AccountListOpt(),
+              ListDetails(),
+            ],
           ),
         ),
       ),
